@@ -1,0 +1,46 @@
+Options All -Indexes
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.mgelektronika.com [NC]
+RewriteRule ^(.*)$ http://mgelektronika.com/$1 [L,R=301]
+
+ErrorDocument 404 /404.php
+
+RewriteRule ^контакти kontakti.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /kontakti\.php\ HTTP/
+RewriteRule ^kontakti\.php$ http://mgelektronika.com/контакти [R=301,L]
+
+RewriteRule ^продукти produkti.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /produkti\.php\ HTTP/
+RewriteRule ^produkti\.php$ http://mgelektronika.com/продукти [R=301,L]
+
+RewriteRule ^кабели-и-кабелна-арматура kabeli-i-kabelna-armatura.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /kabeli-i-kabelna-armatura\.php\ HTTP/
+RewriteRule ^kabeli-i-kabelna-armatura\.php$ http://mgelektronika.com/кабели-и-кабелна-арматура [R=301,L]
+
+RewriteRule ^осветителни-тела osvetitelni-tela.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /osvetitelni-tela\.php\ HTTP/
+RewriteRule ^osvetitelni-tela\.php$ http://mgelektronika.com/осветителни-тела [R=301,L]
+
+RewriteRule ^ключове-и-контакти kluchove-i-kontakti.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /kluchove-i-kontakti\.php\ HTTP/
+RewriteRule ^kluchove-i-kontakti\.php$ http://mgelektronika.com/ключове-и-контакти [R=301,L]
+
+RewriteRule ^в-процес-на-разработване under-construction.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /under-construction\.php\ HTTP/
+RewriteRule ^under-construction\.php$ http://mgelektronika.com/в-процес-на-разработване [R=301,L]
+
+RewriteRule ^успешно-изпратено-съобщение success-page.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /success-page\.php\ HTTP/
+RewriteRule ^success-page\.php$ http://mgelektronika.com/успешно-изпратено-съобщение [R=301,L]
+
+RewriteRule ^за-нас za-nas.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /za-nas\.php\ HTTP/
+RewriteRule ^za-nas\.php$ http://mgelektronika.com/за-нас [R=301,L]
+
+RewriteRule ^карта-на-сайта sitemap.php [L,QSA]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sitemap\.php\ HTTP/
+RewriteRule ^sitemap\.php$ http://mgelektronika.com/карта-на-сайта [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://mgelektronika.com/ [R=301,L]
