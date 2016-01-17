@@ -1,0 +1,72 @@
+body {
+    padding-top: 50px;
+}
+a {
+    text-decoration: underline;
+    transition: color .2s;
+    &:hover {
+        color: $brand-success;
+    }
+}
+
+.jumbotron {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    a {
+        text-decoration: none;
+    }
+    &--call-to-action {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        .btn {
+            margin-top: 10px;
+        }
+    }
+}
+
+.navbar {
+    a {
+        text-decoration: none;
+    }
+}
+.navbar-header {
+    position: relative;
+}
+.navbar-brand-note {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #222;
+    width: 305px;
+    padding: 0 10px 5px;
+    border-top: none;
+    letter-spacing: -0.1px;
+    color: #9d9d9d;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.navbar-brand {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+}
+.navbar-title {
+    margin-left: 0;
+    &:before {
+        content: "| "
+    }
+}
+.cta-holder {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
