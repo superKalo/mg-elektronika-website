@@ -9,16 +9,13 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
-    <link rel="stylesheet" href="css/style-bootstrap.css" />
-
     <link rel="author" href="https://plus.google.com/102267809340505390827" />
 
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/lib/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+    <link rel="stylesheet" href="css/style-bootstrap.css" />
 
     <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <script>
@@ -32,3 +29,5 @@
     </script>
 
 </head>
+
+<body itemscope itemtype="http://www.schema.org/ElectronicsStore">

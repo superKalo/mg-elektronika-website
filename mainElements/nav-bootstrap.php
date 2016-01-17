@@ -11,16 +11,16 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">За нас</a></li>
+                <li class="active"><a href="/">Начало</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продукти <span class="caret"></span></a>
+                    <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продукти <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Кабли и кабелна арматура</a></li>
-                        <li><a href="#">Осветителни тела</a></li>
-                        <li><a href="#">Ключове и контакти</a></li>
+                        <li><a href="/кабели-и-кабелна-арматура">Кабли и кабелна арматура</a></li>
+                        <li><a href="/осветителни-тела">Осветителни тела</a></li>
+                        <li><a href="/ключове-и-контакти">Ключове и контакти</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Връзка с нас</a></li>
+                <li><a href="/контакти">Връзка с нас</a></li>
             </ul>
         </div>
     </div>

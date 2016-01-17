@@ -3,33 +3,27 @@
     $meta_description = 'Асортиментът от предлаганите от нас продукти | MG Електроника Варна';
     $meta_keywords = 'кабели, кабелна арматура, осветителни тела, ключове, контакти';
 
-    include 'mainElements/head.php';
+    include 'mainElements/head-bootstrap.php';
 ?>
 
-<body itemscope itemtype="http://www.schema.org/ElectronicsStore">
-    <header>
-        <?php include 'mainElements/upperStageNavigation.html'; ?>
+<?php include 'mainElements/nav-bootstrap.php'; ?>
 
-        <div id="pageTitleBar">
-            <h1>
-                <span>Асортиментът от <strong>предлаганите от нас продукти</strong>,<br />
-                подредени в няколко основни подкатегории.</span>
-            </h1>
-        </div>
-    </header>
 
-    <section>
-        <div id="backStage_holder">
-            <div id="mainContent_holder">
-                <p>В процес на допълване...</p>
-            </div>
+<?php
+    $jumbotron_title = 'Продукти | MG Електроника';
+    $jumbotron_description = 'Част от предлаганите от нас продукти, подредени в три основни подкатегории.';
 
-            <?php include 'mainElements/trippleContent.html'; ?>
+    include 'mainElements/jumbotron-inside-store.php';
+?>
 
-        </div>
-    </section>
+<section class="container">
+    Секциите са <strong>процес на допълване</strong>. Това са само част от нещата, които предлагаме в магазина.
+</section>
 
-    <?php include 'mainElements/footer.html'; ?>
+<?php include 'mainElements/cta-bootstrap.php'; ?>
 
-</body>
-</html>
+<?php include 'mainElements/call-to-action-bootstrap.php'; ?>
+
+<?php include 'mainElements/footer-bootstrap.php'; ?>
+
+<?php include 'mainElements/scripts-bootstrap.php'; ?>
